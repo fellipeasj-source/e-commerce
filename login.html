@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="topo">
+    <h1>Controle de Produtos</h1>
+    <p>Acesse sua conta</p>
+</header>
+
+<nav class="menu">
+    
+    
+    <a href="cadastro_contas.html">Criar conta</a>
+    <a href="login.html">Login</a>
+</nav>
+
+<main class="container">
+    <section class="cartao">
+        <h2>Entrar no sistema</h2>
+        <p class="subtitulo">Informe seu e-mail e sua senha.</p>
+
+        <form name="frm_login" action="logar.php" method="post">
+            <div class="campo">
+                <label for="txt_email">E-mail</label>
+                <input type="email" id="txt_email" name="txt_email"
+                       required>
+            </div>
+
+            <div class="campo">
+                <label for="txt_senha">Senha</label>
+                <input type="password" id="txt_senha" name="txt_senha"
+                       required>
+            </div>
+
+            <div class="acoes">
+                <button type="submit" class="botao">Entrar</button>
+                <a href="cadastro_contas.html" class="botao botao-azul">Criar conta</a>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="rodape">Sistema de Controle de Produtos</footer>
+
+</body>
+</html>
